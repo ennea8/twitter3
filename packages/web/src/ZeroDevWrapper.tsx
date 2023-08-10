@@ -8,11 +8,11 @@ import { publicProvider } from 'wagmi/providers/public'
 import { polygonMumbai } from 'wagmi/chains'
 import { connectorsForWallets, RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit'
 import {
-  googleWallet,
-  facebookWallet,
-  githubWallet,
-  discordWallet,
-  twitchWallet,
+  // googleWallet,
+  // facebookWallet,
+  // githubWallet,
+  // discordWallet,
+  // twitchWallet,
   twitterWallet,
 } from '@zerodevapp/wagmi/rainbowkit'
 
@@ -27,11 +27,11 @@ const connectors = connectorsForWallets([
   {
     groupName: 'Social',
       wallets: [
-        googleWallet({options: { projectId: defaultProjectId}}),
-        facebookWallet({options: { projectId: defaultProjectId}}),
-        githubWallet({options: { projectId: defaultProjectId }}),
-        discordWallet({options: { projectId: defaultProjectId }}),
-        twitchWallet({options: { projectId: defaultProjectId }}),
+        // googleWallet({options: { projectId: defaultProjectId}}),
+        // facebookWallet({options: { projectId: defaultProjectId}}),
+        // githubWallet({options: { projectId: defaultProjectId }}),
+        // discordWallet({options: { projectId: defaultProjectId }}),
+        // twitchWallet({options: { projectId: defaultProjectId }}),
         twitterWallet({options: { projectId: defaultProjectId }}),
     ],
   }

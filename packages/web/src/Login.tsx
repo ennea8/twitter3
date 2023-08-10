@@ -39,13 +39,14 @@ export function Login() {
       <Flex justify={"center"} align="center" mih={'100%'} direction={'column'} gap={30}>
         <ZeroDevLogo width={300} height={'100%'} />
         <Title className={classes.title}>
-          Supercharge Web3 UX with<br />
+          Web3 your twitter assets
+          <br />
           <Text component="span" className={classes.highlight} inherit>
-            Account Abstraction
+            Engage into web3 from twitter
           </Text>
         </Title>
-        <ConnectButton label={"Start Demo"} />
-        ZeroDev will create an AA wallet for you using social accounts.
+        <ConnectButton label={"Connect "} />
+        {/*Twitter3 will create an AA wallet for you using twitter account.*/}
       </Flex>
     </Container>
   );
