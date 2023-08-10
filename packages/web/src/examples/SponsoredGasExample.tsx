@@ -10,9 +10,7 @@ import contractAbi from "../resources/contracts/polygon-mumbai/0x34bE7f35132E979
 import { Button, Anchor, Flex } from '@mantine/core';
 import { Page } from '../Page'
 
-const description = `With ZeroDev, you can pay gas for your users, so they don't have to buy ETH before using your app.
-
-Try minting some NFTs below, without paying gas!`
+const description = `Try minting some NFTs below, without paying gas!`
 
 export function SponsoredGasExample({ label = undefined }) {
   const { address } = useAccount();
@@ -69,7 +67,7 @@ export function SponsoredGasExample({ label = undefined }) {
   return (
     <Page title={"Pay Gas for Users"} description={description} docs={"https://docs.zerodev.app/use-wallets/pay-gas-for-users"}>
       <Flex align={'center'} justify={'center'} direction={'column'} gap={'1rem'} style={{ flex: 1 }}>
-        <strong style={{ fontSize: '1.5rem' }}>NFT Count</strong>
+        <strong style={{ fontSize: '1.5rem' }}>Base Dayone</strong>
         <div style={{ fontSize: "2rem", fontWeight: 'medium', width: 100, height: 100, borderRadius: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', border: '10px solid #2B8DE3' }}>{`${balance ?? 0}`}</div>
         <Button
           loading={balanceChanging}

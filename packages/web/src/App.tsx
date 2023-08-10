@@ -8,11 +8,15 @@ import {
 } from "react-router-dom";
 import { SponsoredGasExample } from './examples/SponsoredGasExample';
 import { BatchExample } from './examples/BatchExample';
+import { TwitterMint } from './examples/TwitterMint';
 
 
 const links = [
-  { path: '/gas-free', label: 'Pay Gas for Users', element: <SponsoredGasExample /> },
-  { path: '/bundle', label: 'Bundle Transactions', element: <BatchExample /> },
+  { path: '/bundle', label: 'Twitter Forever', element: <TwitterMint /> },
+  { path: '/gas-free', label: 'Activities', element: <SponsoredGasExample /> },
+
+  // { path: '/bundle', label: 'Bundle Transactions', element: <BatchExample /> },
+
 ];
 
 const router = createBrowserRouter([
