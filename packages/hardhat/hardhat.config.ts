@@ -13,7 +13,7 @@ const providerApiKey = process.env.ALCHEMY_API_KEY || "oKxs-03sij-U_N0iOlrSsZFr2
 const deployerPrivateKey =
   process.env.DEPLOYER_PRIVATE_KEY ?? "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
 // If not set, it uses ours Etherscan default API key.
-const etherscanApiKey = process.env.ETHERSCAN_API_KEY || "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW";
+//const etherscanApiKey = process.env.ETHERSCAN_API_KEY || "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW";
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -90,12 +90,30 @@ const config: HardhatUserConfig = {
       accounts: [deployerPrivateKey],
       verifyURL: "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
     },
-  },
-  verify: {
-    etherscan: {
-      apiKey: `${etherscanApiKey}`,
+    baseGoerli: {
+      url: `https://goerli.base.org`,
+      accounts: [deployerPrivateKey],
+      verifyURL:"https://api-goerli.basescan.org/api"
     },
   },
+  //verify: {
+    etherscan: {
+      //apiKey: `${etherscanApiKey}`,
+      apiKey: {
+        "baseGoerli": "PLACEHOLDER_STRING"
+      },
+      customChains: [
+        {
+          network: "baseGoerli",
+          chainId: 84531,
+          urls: {
+            apiURL: "https://api-goerli.basescan.org/api",
+            browserURL: "https://goerli.basescan.org"
+          }
+        }
+      ]
+    },
+  //},
 };
 
 export default config;
