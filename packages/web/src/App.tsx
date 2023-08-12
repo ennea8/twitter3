@@ -9,11 +9,13 @@ import {
 import { SponsoredGasExample } from './examples/SponsoredGasExample';
 import { BatchExample } from './examples/BatchExample';
 import { TwitterMint } from './examples/TwitterMint';
+import {YourContract} from "./examples/YourContract";
 
 
 const links = [
   { path: '/bundle', label: 'Twitter Forever', element: <TwitterMint /> },
   { path: '/gas-free', label: 'Activities', element: <SponsoredGasExample /> },
+  { path: '/test', label: 'test', element: <YourContract /> },
 
   // { path: '/bundle', label: 'Bundle Transactions', element: <BatchExample /> },
 

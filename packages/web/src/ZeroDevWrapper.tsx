@@ -5,7 +5,7 @@ import {
   createClient,
 } from "wagmi";
 import { publicProvider } from 'wagmi/providers/public'
-import { polygonMumbai } from 'wagmi/chains'
+import { polygonMumbai, baseGoerli } from 'wagmi/chains'
 import { connectorsForWallets, RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit'
 import {
   // googleWallet,
@@ -16,10 +16,17 @@ import {
   twitterWallet,
 } from '@zerodevapp/wagmi/rainbowkit'
 
-const defaultProjectId = process.env.REACT_APP_ZERODEV_PROJECT_ID || 'b5486fa4-e3d9-450b-8428-646e757c10f6'
+const projectId ={
+  baseGoerlri:'65ee46d6-a508-47aa-a90c-4b2ee6ed28e1'
+}
+
+//const defaultProjectId = process.env.REACT_APP_ZERODEV_PROJECT_ID || 'b5486fa4-e3d9-450b-8428-646e757c10f6'
+const defaultProjectId = projectId.baseGoerlri
+
 
 const { chains, provider, webSocketProvider } = configureChains(
-  [polygonMumbai],
+  // [polygonMumbai],
+  [baseGoerli],
   [publicProvider()],
 )
 

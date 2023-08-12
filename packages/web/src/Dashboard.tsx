@@ -84,9 +84,9 @@ export function Dashboard({ children, links }: DashboardProps) {
         }
     }, [isConnected])
 
-    if (!isConnected) {
-        return <Login />
-    }
+    // if (!isConnected) {
+    //     return <Login />
+    // }
     return (
         <AppShell
             styles={{
