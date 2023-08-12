@@ -22,7 +22,8 @@ export function YourContract({ label = undefined }) {
 
   console.log('Test', {address, chain})
 
-  const YOURR_CONTRACT_ADDRESS = '0xCD25408B05F83B0e19D63c27BCCd79AC6fE6f87F'
+  // const YOURR_CONTRACT_ADDRESS = '0xCD25408B05F83B0e19D63c27BCCd79AC6fE6f87F'
+  const YOURR_CONTRACT_ADDRESS = '0xC3d940Caf1f353a24A06CEc13c9ebE5ae3350c2C'
 
   const { config } = usePrepareContractWrite({
     address: YOURR_CONTRACT_ADDRESS,
