@@ -7,13 +7,23 @@ import {
   useNetwork
 } from "wagmi";
 
-import {Button, Anchor, Flex, Card, Group, Badge, Image, Text} from '@mantine/core';
+import {Button, Anchor, Flex, Card, Group, Badge, Image, Text, Blockquote, Code} from '@mantine/core';
 import {Page} from '../Page'
 import networkConfig from '../config/base'
-
+import MintBasedEarthlingsBtn from './components/MintBasedEarthlingsBtn'
 export function FreeMint({label = undefined}) {
 
   return <Page title={'Free Mint'}>
+
+    <Code block>
+      Step1: click to login with twitter
+      <br/>
+      Step2: click to mint
+      <br/>
+      Welcome onboard ^_^
+    </Code>
+
+
       {
         networkConfig.freeMintItems.map((item, index) => {
           return (<Card shadow="sm" radius="md" withBorder key={index} mt={"30px"} w={{base: 200, sm: 400, lg: 500}}>
@@ -25,17 +35,13 @@ export function FreeMint({label = undefined}) {
             />
 
             <Group position="apart" mt="md" mb="xs" >
-
-
-
               <Text weight={500}>{item?.name}</Text>
 
               <Text size="sm" color="dimmed">
                 {item?.description}
               </Text>
-              <Badge color="pink" variant="light">
-                Mint
-              </Badge>
+
+              <MintBasedEarthlingsBtn />
             </Group>
           </Card>)
         })

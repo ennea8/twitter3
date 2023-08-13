@@ -1,5 +1,6 @@
 {
   "contracts": {
-    "NRO": "0x80662D760f46237A3d55ac04811beF332f5FEE70"
+    "NRO": "0x80662D760f46237A3d55ac04811beF332f5FEE70",
+    "BasedEarthlings": "0x23548a31f191d2619c52c79f9d7c6d50b2508d99"
   }
 }
