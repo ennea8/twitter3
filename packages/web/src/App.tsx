@@ -10,12 +10,14 @@ import { SponsoredGasExample } from './examples/SponsoredGasExample';
 import { BatchExample } from './examples/BatchExample';
 import { TwitterMint } from './examples/TwitterMint';
 import {YourContract} from "./examples/YourContract";
+import {TestNRO} from "./examples/TestNRO";
 
 
 const links = [
   { path: '/bundle', label: 'Twitter Forever', element: <TwitterMint /> },
   { path: '/gas-free', label: 'Activities', element: <SponsoredGasExample /> },
   { path: '/test', label: 'test', element: <YourContract /> },
+  { path: '/test-freemint', label: 'freemint', element: <TestNRO /> },
 
   // { path: '/bundle', label: 'Bundle Transactions', element: <BatchExample /> },
 
