@@ -11,10 +11,11 @@ import { BatchExample } from './modules/BatchExample';
 import { TwitterMint } from './modules/TwitterMint';
 import {YourContract} from "./modules/YourContract";
 import {TestNRO} from "./modules/TestNRO";
+import {FreeMint} from "./modules/FreeMint";
 
 
 const links = [
-  { path: '/freemint', label: 'Free Mint', element: <TestNRO /> },
+  { path: '/free-mint', label: 'Free Mint', element: <FreeMint /> },
   { path: '/twitter-mint', label: 'Twitter NFTs', element: <TwitterMint /> },
   // { path: '/test', label: 'test', element: <YourContract /> },
 ];
