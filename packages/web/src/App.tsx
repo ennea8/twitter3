@@ -6,21 +6,17 @@ import {
   Outlet,
   Navigate
 } from "react-router-dom";
-import { SponsoredGasExample } from './examples/SponsoredGasExample';
-import { BatchExample } from './examples/BatchExample';
-import { TwitterMint } from './examples/TwitterMint';
-import {YourContract} from "./examples/YourContract";
-import {TestNRO} from "./examples/TestNRO";
+import { SponsoredGasExample } from './modules/SponsoredGasExample';
+import { BatchExample } from './modules/BatchExample';
+import { TwitterMint } from './modules/TwitterMint';
+import {YourContract} from "./modules/YourContract";
+import {TestNRO} from "./modules/TestNRO";
 
 
 const links = [
-  { path: '/bundle', label: 'Twitter Forever', element: <TwitterMint /> },
-  { path: '/gas-free', label: 'Activities', element: <SponsoredGasExample /> },
-  { path: '/test', label: 'test', element: <YourContract /> },
-  { path: '/test-freemint', label: 'freemint', element: <TestNRO /> },
-
-  // { path: '/bundle', label: 'Bundle Transactions', element: <BatchExample /> },
-
+  { path: '/freemint', label: 'Free Mint', element: <TestNRO /> },
+  { path: '/twitter-mint', label: 'Twitter NFTs', element: <TwitterMint /> },
+  // { path: '/test', label: 'test', element: <YourContract /> },
 ];
 
 const router = createBrowserRouter([

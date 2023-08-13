@@ -4,7 +4,7 @@ import {
   useContractRead,
   useNetwork,
 } from "wagmi";
-import contractAbi from "../resources/contracts/polygon-mumbai/0x34bE7f35132E97915633BC1fc020364EA5134863.json";
+import contractAbi from "../config/polygon-mumbai/0x34bE7f35132E97915633BC1fc020364EA5134863.json";
 import { Button, Anchor, Flex } from '@mantine/core';
 import { Page } from "../Page";
 import { usePrepareContractBatchWrite, useContractBatchWrite, useWaitForAATransaction } from "@zerodevapp/wagmi";
@@ -39,7 +39,7 @@ export function BatchExample() {
   },
   )
 
-  const { write: batchMint, data } = useContractBatchWrite(config) 
+  const { write: batchMint, data } = useContractBatchWrite(config)
 
   useWaitForAATransaction({
     wait: data?.wait,
