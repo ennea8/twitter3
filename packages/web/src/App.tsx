@@ -16,7 +16,9 @@ import {FreeMint} from "./modules/FreeMint";
 
 const links = [
   { path: '/free-mint', label: 'Free Mint', element: <FreeMint /> },
-  { path: '/twitter-mint', label: 'Twitter NFTs', element: <TwitterMint /> },
+  { path: '/twitter-mint', label: 'Twitter NFTs(todo)', element: <TwitterMint /> },
+  { path: '/account', label: 'Account(todo)', element: <div /> },
+
   // { path: '/test', label: 'test', element: <YourContract /> },
 ];
 
